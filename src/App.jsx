@@ -3,6 +3,7 @@ import Header from './components/header';
 import Main from './components/main';
 import Footer from './components/footer';
 import Inscricao from './components/inscricao';
+import Galeria from './components/galeria';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { configureAnchors } from 'react-scrollable-anchor'
 import './App.scss';
@@ -15,9 +16,10 @@ class App extends Component {
       <Router>
       <div className="App">        
         <Header/>
-        <Route exact path="/" component={Main}/>        
-        <Footer/>
+        <Route exact path="/" component={Main}/> 
         <Route exact path="/inscricao" component={Inscricao}/>  
+        <Route exact path="/galeria" component={Galeria}/>        
+        <Footer/>
       </div>
       </Router>
     );

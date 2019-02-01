@@ -14,3 +14,35 @@ button{
         transform: translateY(-2px);
     }
 }
+
+label{
+    display: block;
+    color: $cor_principal;
+    cursor: pointer;
+
+    &.file{
+        padding: 10px 20px;
+        border: 2px solid $cor_principal;
+        outline: 0px;
+        display: inline-block;
+        margin: 10px 0; 
+        font-size: 14px;
+
+        &:hover{
+            background: $cor_principal;
+            color: #fff;
+        }
+    }
+}
+
+input{
+    padding: 10px 20px;
+    border: 2px solid $cor_principal;
+    outline: 0px;
+    display: block;
+    margin-bottom: 10px;
+
+    &[type=file]{
+        border:none;
+    }
+}
