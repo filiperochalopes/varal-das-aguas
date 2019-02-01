@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Light.ttf");
+}
+
+@import 'styles/variables';
+@import 'styles/header';
+@import 'styles/cover';
+@import 'styles/main';
+@import 'styles/forms';
+@import 'styles/footer';
+
+html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background: $background;
+  color: #666666;
+  font-size: .9em;
+}
+
+.container{
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 65px;
+}

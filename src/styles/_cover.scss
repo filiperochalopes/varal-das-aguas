@@ -1,0 +1,14 @@
+.cover{
+    position: relative;
+    background: url("/img/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 680px;
+
+    img{
+        position: absolute;
+        top: 138px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

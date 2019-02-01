@@ -1,0 +1,22 @@
+header{
+    position: fixed;
+    height: 50px;
+    background: $cor_principal;
+    color: $cor_principal_clara;
+    z-index: 99;
+    width: 100%;
+    font-size: 1.1em;
+
+    button{
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            display: inline;
+            padding: 0 12px;
+        }
+    }
+}

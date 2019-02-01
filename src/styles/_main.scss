@@ -1,0 +1,81 @@
+main{
+    position: relative;
+    top: -67px;
+
+    .container > div{
+        background: #fff;
+        padding: 45px 90px;
+    }
+
+    li{
+        line-height: 26px;
+    }
+
+}
+
+section{
+    margin: 10px;
+
+    &.w-50{
+        width: 50%;
+    }
+
+    &.pb-5{
+        padding-bottom: 40px;
+    }
+
+    h2{
+        font-weight: normal;
+        color: $cor_principal;
+        color: #383838;
+        text-align: center;
+        font-size: 1.1em;
+        color: $cor_principal;
+    }
+
+    p:last-child{
+        margin-bottom: 65px;
+    }
+}
+
+.box_inscricao{
+    position: absolute;
+    top: -36px;
+    right: 100px;
+    max-width: 220px;
+    font-size: .95em;
+    text-align: center;
+    
+    .bg-blue{
+        background: $cor_principal;
+        color: #fff;
+        padding: 33px;
+        box-sizing: border-box;
+        text-align: left;
+
+        &:first-child{
+            padding-bottom: 0px;
+        }
+    }
+
+    h3{
+        color: $cor_principal_clara;
+        font-weight: normal;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    button{
+        margin-top: 44px;
+    }
+}
+
+p{
+    padding: 5px 0;
+    line-height: 18px;
+    word-wrap: break-word;
+}
