@@ -1,8 +1,12 @@
 import React from 'react';
+import Cover from './cover';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { BrowserRouter as  Router, Link } from "react-router-dom";
 
 const Main = () => {
   return (
+    <div className="page">
+    <Cover/>
     <main>
       <div className="container">
         <div>
@@ -23,7 +27,7 @@ const Main = () => {
               <h3>APRESENTAÇÃO</h3>
               <p>20/03/2017 das 16:30h às 17:30h</p>
             </div>
-            <button>FAÇA SUA INSCRIÇÃO</button>
+            <Link to="/inscricao"><button>FAÇA SUA INSCRIÇÃO</button></Link>
           </div>
           <hr></hr>
           <ScrollableAnchor id={'sobre'}>
@@ -63,6 +67,7 @@ const Main = () => {
         </div>
       </div>
     </main>
+    </div>
   )
 }
 

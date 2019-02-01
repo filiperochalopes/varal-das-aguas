@@ -7,8 +7,13 @@ main{
         padding: 45px 90px;
     }
 
+    ul{
+        padding: 0;
+        padding-left: 14px;
+    }
+
     li{
-        line-height: 26px;
+        line-height: 24px;
     }
 
 }
@@ -21,16 +26,18 @@ section{
     }
 
     &.pb-5{
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     h2{
-        font-weight: normal;
+        font-weight: 400;
         color: $cor_principal;
         color: #383838;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 15px;
         color: $cor_principal;
+        margin: 0;
+        padding-bottom: 8px;
     }
 
     p:last-child{
@@ -52,6 +59,7 @@ section{
         padding: 33px;
         box-sizing: border-box;
         text-align: left;
+        line-height: 12px;
 
         &:first-child{
             padding-bottom: 0px;
@@ -75,7 +83,8 @@ section{
 }
 
 p{
-    padding: 5px 0;
-    line-height: 18px;
-    word-wrap: break-word;
+    padding: 3px 0;
+    line-height: 16px;
+    word-wrap: break-all;
+    hyphens: auto;
 }

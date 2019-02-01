@@ -2,10 +2,12 @@ button{
     background: $cor_principal;
     color: #fff;
     height: 38px;
-    padding: 0 11px;
+    padding: 0 20px;
     border: none;
     transition: .5s all;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
 
     &:hover{
         background: $cor_principal_clara;
