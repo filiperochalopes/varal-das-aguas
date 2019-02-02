@@ -32,30 +32,18 @@ class Inscricao extends Component {
     console.log(e.target);
     const data = new FormData(e.target);
 
-    fetch('http://192.168.0.64/sites/99freelas/varal-das-aguas-api/galeria.php', {
+    fetch('https://arquivos.filipelopes.me/varal-das-aguas/api/galeria.php', {
       method: 'POST',
       body: data,
     }).then(function(response) {
       return response.text();
     }).then((data) => {     
-      // data = JSON.parse(data);
-      console.log(data);
-    }); 
-  }
-
-  getPortfolio = () => {
-    fetch("http://192.168.0.64/sites/server.filipelopes.me/get_portfolio.php")
-    // fetch("https://server.filipelopes.me/get_put_views.php")
-    .then(function(response) {
-      return response.text();
-    }).then((data) => {     
       data = JSON.parse(data);
       console.log(data);
-      
-      this.setState({
-        data
-      })    
-    })
+      if(data.registro_id){
+        window.location.href = "galeria/success/" + data.registro_id;
+      }
+    }); 
   }
 
   render () {

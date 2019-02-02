@@ -5,7 +5,7 @@ const Cover = () => {
     return (
         <ScrollableAnchor id={'inicio'}>
             <div className="cover">
-                <img src="img/logo.png" alt="Logo Varal das Águas"/>
+                <img src="/img/logo.png" alt="Logo Varal das Águas"/>
             </div>
         </ScrollableAnchor>
     )
