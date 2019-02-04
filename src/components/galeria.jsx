@@ -54,6 +54,11 @@ class Inscricao extends Component {
     return (
       <div className="page" onLoad={this.getPortfolio}>
         <Cover />
+        {/* <Lightbox
+            images={[{ src: server + "/" + props.item.url_foto }]}
+            backdropClosesModal={true}
+            isOpen={false}
+        /> */}
         <main>
           <div className="container full">
             <div>

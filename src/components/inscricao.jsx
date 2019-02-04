@@ -57,6 +57,7 @@ class Inscricao extends Component {
               <h2>INSCRIÇÃO</h2>
               <p>Inscreva sua foto preenchendo o formulário abaixo. Lembramos que apenas poderá ser inscrita uma foto por pessoa. Boa Sorte!</p>
               </section>
+              <section>
               <form encType="multipart/form-data" method="POST" onSubmit={this.sendPhoto}>
                 <label htmlFor="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required />
@@ -70,6 +71,7 @@ class Inscricao extends Component {
                 <input type="file" name="foto" id="foto" required/>
                 <button type="submit">Enviar</button>
               </form>
+              </section>
             </div>
           </div>
         </main>

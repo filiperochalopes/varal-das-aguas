@@ -79,6 +79,8 @@ section{
 
     button{
         margin-top: 44px;
+        padding: 15px 40px;
+        height: 60px;
     }
 }
 
@@ -87,4 +89,40 @@ p{
     line-height: 16px;
     word-wrap: break-all;
     hyphens: auto;
+}
+
+@media (max-width: 767.98px) {
+
+    main{
+        width: 90%;
+        left: 5%;
+        // box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .box_inscricao{
+        position: relative;
+        max-width: 100%;
+        top: auto;
+        right: auto;
+
+        button{
+            margin-bottom: 20px;
+        }
+    }
+
+    main .container > div{
+        padding: 0;
+    }
+
+    section{
+        padding: 30px;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 1.1em;
+
+        &.w-50{
+            width: 100%;
+        }
+    }
+
 }

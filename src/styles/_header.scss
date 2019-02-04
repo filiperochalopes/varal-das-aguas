@@ -8,8 +8,38 @@ header{
     font-size: 1em;
     font-weight: 400;
 
+    & > div > img{
+        display: none;
+
+        &.mobile{
+            display: block;
+            height: 30px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+
     button{
         display: none;
+        outline: 0;
+
+        &.mobile{
+            display: block;
+            position: absolute;
+            z-index: 2;
+            top: 8px;
+            left: 20px;
+            color: #fff;
+
+            &:hover{
+                transform: none;
+                background: $cor_principal;
+            }
+        }
+
+        img{
+            width: 20px;
+        }
     }
 
     ul{
@@ -37,6 +67,24 @@ header{
             display: inline;
             padding: 5px 14px; 
             line-height: 50px;         
+        }
+    }
+
+    ul.mobile{
+        display: none;
+
+        li{
+            display: block;
+            background: $cor_principal;
+            text-align: center;
+        }
+
+        a{
+            &:first-child{
+                li{
+                    padding: 5px 14px;
+                }
+            }
         }
     }
 }

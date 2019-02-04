@@ -12,3 +12,18 @@
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 767.98px) {
+
+    .cover{
+        height: 500px;
+    
+        img{
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            transform: none;
+        }
+    }
+
+}

@@ -48,7 +48,7 @@ const Main = () => {
           <section>
             <h2>REGRAS</h2>
             <p>
-            ﻿odas as fotos que retrate da temática água (tais como situação de secas ou excedentes hídricos, as belezas e os desafios de se trabalhar com os recursos hídricos etc.) serão bem vindas.
+            Todas as fotos que retrate da temática água (tais como situação de secas ou excedentes hídricos, as belezas e os desafios de se trabalhar com os recursos hídricos etc.) serão bem vindas.
             </p>
             <ul>
               <li>As fotos devem ser originais e sem alterações.</li>
