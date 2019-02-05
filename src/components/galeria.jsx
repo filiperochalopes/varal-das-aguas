@@ -29,7 +29,12 @@ class Galeria extends Component {
       return (
         <div>
           <span className="success">SUA IMAGEM FOI CADASTRADA COM SUCESSO!</span>
-          <GaleriaItem key="minha_foto" className="minha_foto" item={this.state.minha_foto} />
+          <GaleriaItem 
+          key="minha_foto" 
+          className="minha_foto" 
+          server={server}
+          item={this.state.minha_foto}
+          handler={this.openLightBox} />
         </div>
       )
     }
