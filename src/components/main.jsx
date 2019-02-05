@@ -1,6 +1,5 @@
 import React from 'react';
 import Cover from './cover';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import { BrowserRouter as  Router, Link } from "react-router-dom";
 
 const Main = () => {
@@ -10,14 +9,14 @@ const Main = () => {
     <main>
       <div className="container">
         <div>
-          <ScrollableAnchor id={'concurso'}>
+        <a id="concurso"></a>
           <section className="w-50 pb-5">
             <h2>O CONCURSO</h2>
             <p>
             O Concurso de fotografia para todos os técnicos do Inema para exposição de fotos que retratem a temática água (os desafios e as belezas encontradas em campo) pelos colaboradores. Além de uma apresentação cultural com um artista de rua (poesia, musica, cordel) que aborde a temática água.
             </p>
           </section>
-          </ScrollableAnchor>
+          
           <div className="box_inscricao">
             <div className="bg-blue">
               <h3>EXPOSIÇÃO DE FOTOS</h3>
@@ -30,7 +29,7 @@ const Main = () => {
             <Link to="/inscricao"><button>FAÇA SUA INSCRIÇÃO</button></Link>
           </div>
           <hr></hr>
-          <ScrollableAnchor id={'sobre'}>
+          <a id="sobre"></a>
           <section>
             <h2>SOBRE</h2>
             <p>Objetivos</p>
@@ -43,8 +42,8 @@ const Main = () => {
             <p>As 05 (cinco) primeiras fotografia que for mais votada nas redes sociais (Facebook e Instagram) do Inema, receberá como prêmio.
             </p>
           </section>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'regras'}>
+          
+          <a id="regras"></a>
           <section>
             <h2>REGRAS</h2>
             <p>
@@ -63,7 +62,7 @@ const Main = () => {
             </ul>
             <p>A foto vencedora irá ganhar um kit de brinde (Agenda, caneta, livro).</p>
           </section>
-          </ScrollableAnchor>
+          
         </div>
       </div>
     </main>

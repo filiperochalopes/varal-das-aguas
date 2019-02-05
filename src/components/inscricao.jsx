@@ -28,7 +28,7 @@ class Inscricao extends Component {
       data = JSON.parse(data);
       console.log(data);
       if(data.registro_id){
-        window.location.href = "galeria/success/" + data.registro_id;
+        window.location.href = "/#/galeria/success/" + data.registro_id;
       }
     }); 
   }

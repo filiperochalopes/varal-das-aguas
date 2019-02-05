@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends Component {
 
@@ -47,11 +48,11 @@ class Header extends Component {
           <button className={this.state.ulClass} onClick={this.toggleMenu}><img src="/img/bars-solid.svg"/></button>
           <img className={this.state.ulClass} src="/img/purelogo.png"/>
           <ul className={this.state.ulClass} style={this.state.menuStyle}>
-            <a href='/#inicio' onClick={this.toggleMenu}><li>INÍCIO</li></a>
-            <a href='/#concurso' onClick={this.toggleMenu}><li>O CONCURSO</li></a>
-            <a href='/#sobre' onClick={this.toggleMenu}><li>SOBRE</li></a>
-            <a href='/#regras' onClick={this.toggleMenu}><li>REGRAS</li></a>
-            <Link to="/inscricao" onClick={this.toggleMenu}><li>INSCRIÇÃO</li></Link>
+            <Link smooth to='/#inicio' onClick={this.toggleMenu}><li>INÍCIO</li></Link>
+            <Link smooth to='/#concurso' onClick={this.toggleMenu}><li>O CONCURSO</li></Link>
+            <Link smooth to='/#sobre' onClick={this.toggleMenu}><li>SOBRE</li></Link>
+            <Link smooth to='/#regras' onClick={this.toggleMenu}><li>REGRAS</li></Link>
+            <Link smooth to="/inscricao" onClick={this.toggleMenu}><li>INSCRIÇÃO</li></Link>
           </ul>
         </div>
       </header>
