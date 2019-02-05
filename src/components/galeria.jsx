@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import Cover from './cover';
 import GaleriaItem from './galeria_item';
+import Lightbox from 'react-images';
 
-class Inscricao extends Component {
+const server = "https://arquivos.filipelopes.me/varal-das-aguas/api/uploads";
+
+class Galeria extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -11,7 +14,11 @@ class Inscricao extends Component {
       galeria: [
         {}
       ],
-      minha_foto: null
+      minha_foto: null,
+      lightBox: {
+        src: null,
+        isOpened: false
+      }
     }
 
     console.log(this.state.sucess, this.state.id, this.state.galeria);
@@ -49,16 +56,34 @@ class Inscricao extends Component {
       })
   }
 
+  openLightBox = (e) => {
+    this.setState({
+      lightBox: {
+        src: e.target.src,
+        isOpened: true
+      }
+    })
+  }
+
+  closeLightbox = () => {
+    this.setState({
+      lightBox: {
+        isOpened: false
+      }
+    })
+  }
+
   render() {
 
     return (
       <div className="page" onLoad={this.getPortfolio}>
         <Cover />
-        {/* <Lightbox
-            images={[{ src: server + "/" + props.item.url_foto }]}
-            backdropClosesModal={true}
-            isOpen={false}
-        /> */}
+        <Lightbox
+          images={[{ src: this.state.lightBox.src }]}
+          backdropClosesModal={true}
+          isOpen={this.state.lightBox.isOpened}
+          onClose={this.closeLightbox}
+        />
         <main>
           <div className="container full">
             <div>
@@ -70,7 +95,11 @@ class Inscricao extends Component {
                 <h2>GALERIA</h2>
               </section>
               <section id="galeria" className="flex">{this.state.galeria.map((item, i) => (
-                <GaleriaItem key={i} item={item} />
+                <GaleriaItem 
+                key={i} 
+                item={item}
+                server={server}
+                handler={this.openLightBox} />
               ))}
               </section>
             </div>
@@ -81,4 +110,4 @@ class Inscricao extends Component {
   }
 }
 
-export default Inscricao;
+export default Galeria;
