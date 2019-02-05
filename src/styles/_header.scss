@@ -47,6 +47,10 @@ header{
         margin: 0;
         padding: 0;
 
+        &.desktop{
+            display: block !important;
+        }
+
         a{
             text-decoration: none;
             color: $cor_principal_clara;

@@ -13,6 +13,15 @@ button{
         background: $cor_principal_clara;
         transform: translateY(-2px);
     }
+
+    &:disabled{
+        background: grey;
+
+        &:hover{
+            transform: none;
+            cursor: default;
+        }
+    }
 }
 
 label{
@@ -45,4 +54,15 @@ input{
     &[type=file]{
         border:none;
     }
+
+    &[type=checkbox]{
+        display: inline;
+    }
+}
+
+#termos{
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid $cor_principal;
+    padding: 10px;
 }
