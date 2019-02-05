@@ -5,7 +5,7 @@ header{
     color: $cor_principal_clara;
     z-index: 99;
     width: 100%;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
 
     & > div > img{
@@ -69,7 +69,7 @@ header{
 
         li{
             display: inline;
-            padding: 5px 14px; 
+            padding: 5px 12px; 
             line-height: 50px;         
         }
     }

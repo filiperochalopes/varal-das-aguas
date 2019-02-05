@@ -26,7 +26,7 @@ section{
     }
 
     &.pb-5{
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
 
     h2{
@@ -50,16 +50,16 @@ section{
     top: -36px;
     right: 100px;
     max-width: 220px;
-    font-size: .95em;
+    font-size: 1em;
     text-align: center;
     
     .bg-blue{
         background: $cor_principal;
         color: #fff;
-        padding: 33px;
+        padding: 40px;
         box-sizing: border-box;
         text-align: left;
-        line-height: 12px;
+        line-height: 14px;
 
         &:first-child{
             padding-bottom: 0px;
@@ -79,14 +79,14 @@ section{
 
     button{
         margin-top: 44px;
-        padding: 8px 22px;
+        padding: 8px 19px;
         height: 38px;
     }
 }
 
 p{
-    padding: 3px 0;
-    line-height: 16px;
+    padding: 1px 0;
+    line-height: 17px;
     word-wrap: break-all;
     hyphens: auto;
 }
