@@ -2,6 +2,10 @@ main{
     position: relative;
     top: -67px;
 
+    &.modal{
+        top:0;
+    }
+
     .container > div{
         background: #fff;
         padding: 45px 90px;

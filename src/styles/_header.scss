@@ -51,10 +51,11 @@ header{
             display: block !important;
         }
 
-        a{
+        a, .a_like{
             text-decoration: none;
             color: $cor_principal_clara;
             transition: .5s all;
+            cursor: pointer;
 
             &:hover{
                 color: #fff;

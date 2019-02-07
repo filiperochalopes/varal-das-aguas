@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Cover from './cover';
 
 class Inscricao extends Component {
 
@@ -42,8 +41,7 @@ class Inscricao extends Component {
   render () {
     return (
       <div className="page">
-        <Cover />
-        <main>
+        <main className="modal">
           <div className="container">
             <div>
               <section>

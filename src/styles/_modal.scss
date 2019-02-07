@@ -1,0 +1,10 @@
+.styles_modal__gNwvD{
+    box-shadow: 0 1px 5px #000;
+    button{
+        &:hover{
+            transform: none;
+            background: transparent;
+            fill: $cor_principal;
+        }
+    }
+}
