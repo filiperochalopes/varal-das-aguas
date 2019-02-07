@@ -13,6 +13,7 @@ class Inscricao extends Component {
 
   }
 
+  //Comunicação POST com API da galeria - inserir imagem
   sendPhoto = e => {
     e.preventDefault();
     console.log(e.target);
@@ -32,6 +33,7 @@ class Inscricao extends Component {
     }); 
   }
 
+  //Verifica se o checkbox do "Li e aceito" está marcado para poder liberar o botão "Enviar"
   canSend = (e) => {
     this.setState({canSend:e.target.checked}, () => {
       this.submitBt.current.disabled = this.state.canSend ? false : true

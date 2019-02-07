@@ -24,6 +24,7 @@ class Galeria extends Component {
     console.log(this.state.sucess, this.state.id, this.state.galeria);
   }
 
+  //caso exista minha_foto, adiciona no render a imagem commensagem de insricao com sucesso
   loadSuccess = () => {
     if(this.state.minha_foto){
       return (
@@ -40,6 +41,7 @@ class Galeria extends Component {
     }
   }
 
+  //verifica se existe nos parametros do Router uma id, o que significa que acabou de ser inscrito, caso sim, cadastra o objeto da foto que acabou de ser inscrita como minha_foto
   get_minhaFoto = () => {
     if (this.state.id) {
       this.state.galeria.map(item => {
@@ -49,6 +51,7 @@ class Galeria extends Component {
     }
   }
 
+  //Comunicação GET com API da galeria - pegar imagens
   getPortfolio = () => {
     fetch('https://arquivos.filipelopes.me/varal-das-aguas/api/galeria.php')
       .then(function (response) {
@@ -61,6 +64,7 @@ class Galeria extends Component {
       })
   }
 
+  //Abre imagem maior ao clicar em uma delas
   openLightBox = (e) => {
     this.setState({
       lightBox: {
@@ -70,6 +74,7 @@ class Galeria extends Component {
     })
   }
 
+  //Fecha caixa de imagem
   closeLightbox = () => {
     this.setState({
       lightBox: {

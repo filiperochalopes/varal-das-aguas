@@ -8,7 +8,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { configureAnchors } from 'react-scrollable-anchor'
 import './App.scss';
 
+//Configuração de rolagem das âncoras
 configureAnchors({offset: -90, scrollDuration: 200});
+
+//context API react > 16
 const ModalInscricao = React.createContext();
 
 class App extends Component {
@@ -16,6 +19,8 @@ class App extends Component {
     super(props);
 
     this.state = {
+
+      //dados do context API ModalInscricao
       modalInscricao: {
         isOpened: false,
         closeModal: () => {
@@ -30,6 +35,7 @@ class App extends Component {
         }
       }
     }
+
   }
   render() {
     return (
